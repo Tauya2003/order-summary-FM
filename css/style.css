@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 20;
+}
+
+@media screen and (max-width: 415px) {
+  .card {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 416px) {
+  body {
+    background: url(../images/pattern-background-desktop.svg);
+    background-size: initial;
+    background-repeat: no-repeat;
+  }
+  body .card {
+    max-width: 370px;
+  }
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-color: hsl(225deg, 100%, 94%);
+  margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 100vh;
+  background: url(../images/pattern-background-mobile.svg);
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+main .card {
+  border-radius: 20px;
+  background-color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  overflow: hidden;
+  margin: 1px;
+}
+main .card__top {
+  height: 160px;
+  background-image: url(../images/illustration-hero.svg);
+  background-size: cover;
+  background-position: center;
+}
+main .card__bottom {
+  padding: 20px;
+}
+main .card__bottom h2 {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+}
+main .card__bottom p {
+  margin: 10px auto;
+  line-height: 1.5rem;
+  width: 90%;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+main .card__bottom .wrapper {
+  background-color: hsl(225deg, 100%, 98%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+main .card__bottom .wrapper img {
+  width: 45px;
+}
+main .card__bottom .wrapper .text {
+  text-align: left;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+main .card__bottom .wrapper .text-top {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+  margin: 2px 0;
+}
+main .card__bottom .wrapper .text-bottom {
+  color: hsl(224deg, 23%, 55%);
+  margin: 2px 0;
+}
+main .card__bottom .wrapper a {
+  font-size: 0.9rem;
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 900;
+}
+main .card__bottom .wrapper a:hover {
+  text-decoration: none;
+  color: #8b82ed;
+}
+main .card__bottom #btn1 {
+  width: 100%;
+  padding: 14px;
+  background-color: hsl(245deg, 75%, 52%);
+  border: none;
+  border-radius: 10px;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 900;
+  margin-bottom: 10px;
+  box-shadow: 0px 25px 25px hsl(225deg, 100%, 98%);
+  cursor: pointer;
+}
+main .card__bottom #btn1:hover {
+  background-color: #8b82ed;
+}
+main .card__bottom #btn2 {
+  background-color: transparent;
+  border: none;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 900;
+  margin: 10px;
+  cursor: pointer;
+}
+main .card__bottom #btn2:hover {
+  color: hsl(223deg, 47%, 23%);
+}/*# sourceMappingURL=style.css.map */

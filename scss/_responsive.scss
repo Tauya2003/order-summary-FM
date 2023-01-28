@@ -1,0 +1,19 @@
+@include media-sm{
+    .card{
+        max-width: 300px;
+    }
+}
+
+@include media-md{
+    body{
+        background: url(../images/pattern-background-desktop.svg);
+        background-size:initial;
+        background-repeat: no-repeat;
+
+        .card{
+            max-width: 370px;
+        }
+    }
+
+    
+}
